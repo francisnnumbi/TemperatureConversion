@@ -107,9 +107,4 @@ public class TemperatureConversion
 	 default: return celciusTO(to, degree);
 	}
  }
-
 }
-
-enum Temperature{
- CELCIUS, FAHRENHEIT, KELVIN, RANKINE, REAUMUR;
-} 
