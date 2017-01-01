@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="@string/app_name"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="match_parent"
+			android:gravity="center"
+			android:paddingBottom="10dp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="from the two drop down list, select the types of convertion and enter the value to be converted on the right."
+			android:layout_width="wrap_content"
+			android:gravity="center"
+			android:paddingBottom="10dp"/>
+
+	</LinearLayout>
+
+	<TableLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:gravity="center_horizontal">
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:padding="10dp"
+			android:background="#F7CAC7">
+
+			<TextView
+				android:layout_height="match_parent"
+				android:id="@+id/tv1"
+				android:text="From:"
+				android:layout_width="wrap_content"/>
+
+			<Spinner
+				android:id="@+id/spinner1"
+				android:layout_height="match_parent"
+				android:layout_width="wrap_content"
+				android:background="#00C7E5"/>
+
+			<EditText
+				android:id="@+id/et1"
+				android:layout_height="match_parent"
+				android:inputType="number|numberDecimal|numberSigned"
+				android:ems="10"
+				android:text="0.0"
+				android:layout_width="wrap_content"
+				android:maxLines="1"
+				android:singleLine="true"
+				android:textAlignment="textEnd"
+				android:background="#FFFFFF"
+				android:hint="0.0"/>
+
+		</TableRow>
+
+		<TableRow
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:padding="10dp"
+			android:background="#E39451">
+
+			<TextView
+				android:layout_height="match_parent"
+				android:text="To:"
+				android:id="@+id/tv2"
+				android:layout_width="wrap_content"/>
+
+			<Spinner
+				android:id="@+id/spinner2"
+				android:layout_height="match_parent"
+				android:layout_width="wrap_content"
+				android:background="#41F6A1"/>
+
+			<EditText
+				android:id="@+id/et2"
+				android:layout_height="match_parent"
+				android:inputType="number|numberDecimal|numberSigned"
+				android:ems="10"
+				android:layout_width="wrap_content"
+				android:singleLine="true"
+				android:background="#B4B4B4"
+				android:maxLines="1"
+				android:hint="0.0"
+				android:text="0.0"/>
+
+		</TableRow>
+
+	</TableLayout>
+
+</LinearLayout>
+
